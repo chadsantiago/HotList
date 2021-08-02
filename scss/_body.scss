@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: $primary-font;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+}
+
+.clear {
+    font-size: .8rem;
+    font-weight: 500;
+    color: $white;
+    cursor: pointer;
+    background-color: $delete;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 5px 15px;
+}
+
+.task-container {
+    color: $white;
+    background-color: rgba(38, 38, 38, 0.3);
+    border-radius: 10px;
+}
+
+.todo {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.label-container > #true {
+    color: $gray;
+    text-decoration: line-through;
+    transition: .3s ease;
+}
+
+.todo > #true {
+    background-color: $primary-color;
+    transition: .3s ease;
+}
+
+.todo > #false {
+    background-color: transparent;
+    border: 2px solid $gray;
+    transition: .3s ease;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.box {
+    min-width: 18px;
+    min-height: 18px;
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 15px;
+    transition: .3s ease;
+    cursor: pointer;
+
+    &:focus {
+        overflow: hidden;
+    }
+}
+
+input:focus,
+input:active {
+    outline: none;
+}

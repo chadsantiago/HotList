@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Hot List.</title>
+    <meta name="description" content="Hot List">
+    <meta name="author" content="Richard Santiago">
+    <meta name="copyright" content="Richard Santiago"/>
+    <meta property="og:title" content="Hot List">
+    <meta property="og:description" content="Manage your daily tasks">
+    <meta property="og:image" content="dist/img/preview.png"/>
+    <meta property="twitter:title" content="Hot List">
+    <meta property="twitter:description" content="Manage your daily tasks">
+
+    <!-- icon -->
+    <link rel="icon" href="/dist/img/icon.png">
+    <!-- css -->
+    <link rel="stylesheet" href="dist/css/main.css">
+    <!-- Box Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="wrapper">
+                <p class="main-title">Hot List.</p>
+
+                <div class="write-icon">
+                    <i onclick="deleteAll()" class='bx bx-trash-alt icon'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mt-5">
+        <div class="container">
+            <div>
+                <p onclick="clearSelected()" class="clear display-4">Remove</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-1">
+        <div class="container">
+            <div class="task-container">
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- dummy section -->
+    <section>
+        <div class="mb-5 mt-1">
+        </div>
+    </section>
+    <!--  -->
+
+    <section class="container">
+        <div class="nav-menu">
+            <div class="container">
+                <div class="navbar-body">
+                    <div class="row">
+                        <form autocomplete="off" data-new-list-form>
+                            <input class="notepad" maxlength="280" name="content" placeholder="Add task" required="required" type="text" data-new-list-input></input>
+                            <input hidden type="submit" class="button" value="Submit">
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <template class="task-template">
+        <div class="row todo">
+            <label class="box"></label>
+            
+            <input class="checkbox" type="checkbox">
+
+            <div class="label-container">
+                <p class="display-3 task"></p>
+            </div>
+        </div>
+    </template>
+
+    <script src="dist/js/main.js"></script>
+</body>
+</html>

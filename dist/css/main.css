@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 420px;
+    padding: 0;
+  }
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.display-3 {
+  font-size: 1rem;
+}
+
+.display-4 {
+  font-size: .9rem;
+}
+
+.mt-0 {
+  margin-top: 0.525rem;
+}
+
+.mt-1 {
+  margin-top: 1.525rem;
+}
+
+.mt-2 {
+  margin-top: 2.525rem;
+}
+
+.mt-3 {
+  margin-top: 3.525rem;
+}
+
+.mt-4 {
+  margin-top: 4.525rem;
+}
+
+.mt-5 {
+  margin-top: 5.525rem;
+}
+
+.mt-6 {
+  margin-top: 6.525rem;
+}
+
+.mb-0 {
+  margin-bottom: 0.525rem;
+}
+
+.mb-1 {
+  margin-bottom: 1.525rem;
+}
+
+.mb-2 {
+  margin-bottom: 2.525rem;
+}
+
+.mb-3 {
+  margin-bottom: 3.525rem;
+}
+
+.mb-4 {
+  margin-bottom: 4.525rem;
+}
+
+.mb-5 {
+  margin-bottom: 5.525rem;
+}
+
+.mb-6 {
+  margin-bottom: 6.525rem;
+}
+
+.mr-0 {
+  margin-right: 0.525rem;
+}
+
+.mr-1 {
+  margin-right: 1.525rem;
+}
+
+.mr-2 {
+  margin-right: 2.525rem;
+}
+
+.mr-3 {
+  margin-right: 3.525rem;
+}
+
+.mr-4 {
+  margin-right: 4.525rem;
+}
+
+.mr-5 {
+  margin-right: 5.525rem;
+}
+
+.pl-0 {
+  padding-left: 0.525rem;
+}
+
+.pl-1 {
+  padding-left: 1.525rem;
+}
+
+.pl-2 {
+  padding-left: 2.525rem;
+}
+
+.pl-3 {
+  padding-left: 3.525rem;
+}
+
+.pl-4 {
+  padding-left: 4.525rem;
+}
+
+.pl-5 {
+  padding-left: 5.525rem;
+}
+
+.pr-0 {
+  padding-right: 0.525rem;
+}
+
+.pr-1 {
+  padding-right: 1.525rem;
+}
+
+.pr-2 {
+  padding-right: 2.525rem;
+}
+
+.pr-3 {
+  padding-right: 3.525rem;
+}
+
+.pr-4 {
+  padding-right: 4.525rem;
+}
+
+.pr-5 {
+  padding-right: 5.525rem;
+}
+
+.pb-0 {
+  padding-bottom: 0.525rem;
+}
+
+.pb-1 {
+  padding-bottom: 1.525rem;
+}
+
+.pb-2 {
+  padding-bottom: 2.525rem;
+}
+
+.pb-3 {
+  padding-bottom: 3.525rem;
+}
+
+.pb-4 {
+  padding-bottom: 4.525rem;
+}
+
+.pb-5 {
+  padding-bottom: 5.525rem;
+}
+
+.pt-0 {
+  padding-top: 0.525rem;
+}
+
+.pt-1 {
+  padding-top: 1.525rem;
+}
+
+.pt-2 {
+  padding-top: 2.525rem;
+}
+
+.pt-3 {
+  padding-top: 3.525rem;
+}
+
+.pt-4 {
+  padding-top: 4.525rem;
+}
+
+.pt-5 {
+  padding-top: 5.525rem;
+}
+
+nav {
+  color: #ebebeb;
+  background-color: #1c1c1c;
+  font-weight: 650;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.main-title {
+  font-size: 1.8rem;
+}
+
+.write-icon {
+  z-index: 4;
+}
+
+.write-icon > .icon {
+  color: #ebebeb;
+  font-size: 1.5rem;
+  -webkit-transition: .28s;
+  transition: .28s;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  -webkit-transition: .28s ease;
+  transition: .28s ease;
+}
+
+.navbar-body {
+  background-color: #1c1c1c;
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid rgba(38, 38, 38, 0.9);
+}
+
+.notepad {
+  font-size: 1rem;
+  color: #ebebeb;
+  background-color: #262626;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+.clear {
+  font-size: .8rem;
+  font-weight: 500;
+  color: #ebebeb;
+  cursor: pointer;
+  background-color: #f84f55;
+  display: inline-block;
+  border-radius: 7px;
+  padding: 5px 15px;
+}
+
+.task-container {
+  color: #ebebeb;
+  background-color: rgba(38, 38, 38, 0.3);
+  border-radius: 10px;
+}
+
+.todo {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.label-container > #true {
+  color: #707070;
+  text-decoration: line-through;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.todo > #true {
+  background-color: #ad67e5;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.todo > #false {
+  background-color: transparent;
+  border: 2px solid #707070;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.box {
+  min-width: 18px;
+  min-height: 18px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 15px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.box:focus {
+  overflow: hidden;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */
